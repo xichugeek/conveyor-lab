@@ -1,0 +1,14 @@
+<!doctype html>
+<html lang="zh-CN"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>西楚极客 · 输送线教学仿真</title></head>
+<body><main>
+<header><div><p>西楚极客 / 工业自动化实战</p><h1>输送线教学仿真</h1></div><p class="safety">合成数据 · 离线模拟</p></header>
+<section class="workbench" aria-label="操作台">
+<div class="viewer"><div id="stage"></div><div class="stage-footer"><span>拖动旋转 · 滚轮缩放</span><span>进料 → S1 光电 → 出料</span></div></div>
+<aside>
+<div class="top"><strong>当前状态</strong><output id="status">待启动</output></div>
+<div class="controls"><button id="normal">正常进料</button><button id="jam">模拟堵料</button><button id="reset" class="quiet">复位</button></div>
+<label for="speed">模拟传送速度</label><input id="speed" type="range" min="2" max="8" step="1" value="5">
+<div class="zones" aria-label="查看工位"><button data-zone="feed">进料</button><button data-zone="sensor">S1 光电</button><button data-zone="exit">出料</button></div>
+<section id="selected"><h2></h2><p></p></section>
+<h2>事件顺序</h2><ol id="events" aria-live="polite"></ol>
+</aside></section></main><script type="module" src="/src/app.js"></script></body></html>

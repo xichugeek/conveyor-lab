@@ -1,0 +1,17 @@
+{
+  "name": "xichugeek-conveyor-lab",
+  "private": true,
+  "version": "1.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite --host 127.0.0.1",
+    "build": "vite build",
+    "test": "node test.mjs"
+  },
+  "dependencies": {
+    "three": "0.187.0"
+  },
+  "devDependencies": {
+    "vite": "7.2.2"
+  }
+}
